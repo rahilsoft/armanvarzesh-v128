@@ -71,7 +71,6 @@
     "@arman/env-config": "workspace:*",
     "@arman/observability": "workspace:*",
     "jose": "^5.8.0",
-    "@livekit/server-sdk": "^2.5.0",
     "bcryptjs": "^3.0.2",
     "@socket.io/redis-adapter": "^8.2.1",
     "@nestjs/passport": "11.0.5",
@@ -84,7 +83,8 @@
     "stripe": "^14.26.0",
     "@opentelemetry/sdk-node": "^0.55.0",
     "@opentelemetry/auto-instrumentations-node": "^0.55.0",
-    "@opentelemetry/exporter-trace-otlp-http": "^0.55.0"
+    "@opentelemetry/exporter-trace-otlp-http": "^0.55.0",
+    "livekit-server-sdk": "^2.5.0"
   },
   "description": "ArmanVarzesh Backend API (NestJS + GraphQL)",
   "keywords": [
@@ -116,5 +116,10 @@
   },
   "prisma": {
     "seed": "node ./prisma/seed.ts || node ./seed.ts || true"
+  },
+  "pnpm": {
+    "overrides": {
+      "@livekit/server-sdk": "npm:livekit-server-sdk@^2.5.0"
+    }
   }
 }
