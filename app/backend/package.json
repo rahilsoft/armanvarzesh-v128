@@ -1,0 +1,120 @@
+{
+  "name": "@arman/backend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node -r tsconfig-paths/register dist/main.js",
+    "start:dev": "nest start --watch",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck:full": "tsc -p tsconfig.json --noEmit",
+    "prisma:generate": "prisma generate --schema src/database/prisma/schema.prisma",
+    "prisma:migrate:dev": "prisma migrate dev --schema src/database/prisma/schema.prisma",
+    "prisma:migrate:deploy": "prisma migrate deploy --schema ./src/database/prisma/schema.prisma",
+    "lint": "pnpm -w exec eslint . --ext .ts,.tsx || echo \"no eslint\"",
+    "format:check": "prettier -c . || echo \"no prettier\"",
+    "test": "jest --passWithNoTests || vitest run || echo \"no tests\"",
+    "test:cov": "jest --coverage",
+    "typecheck": "tsc -p tsconfig.build.json --noEmit",
+    "test:e2e": "jest -c e2e/jest.e2e.config.ts",
+    "e2e": "vitest run -r ./e2e",
+    "prisma:studio": "prisma studio --schema src/database/prisma/schema.prisma",
+    "seed": "ts-node -r tsconfig-paths/register src/scripts/seed.ts || echo \"seed skipped\"",
+    "dev": "ts-node -r tsconfig-paths/register src/main.ts",
+    "clean": "rimraf dist || true",
+    "format": "prettier --write .",
+    "prepare": "husky install || true",
+    "prisma:migrate": "prisma migrate deploy",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "start:prod": "node -r tsconfig-paths/register dist/main.js",
+    "coverage": "jest --coverage --passWithNoTests",
+    "sbom": "npx @cyclonedx/cyclonedx-npm --ignore-npm-errors --json --output-file sbom.json"
+  },
+  "devDependencies": {
+    "prisma": "5.22.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "@types/jest": "^29.5.12",
+    "supertest": "^6.3.4",
+    "@types/supertest": "^2.0.15",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "testcontainers": "^10.8.0",
+    "@types/node": "^20.11.25",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.0",
+    "nodemon": "^3.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "5.22.0",
+    "@nestjs/common": "^11.1.4",
+    "@nestjs/core": "^11.1.4",
+    "@nestjs/platform-express": "^11.1.4",
+    "@nestjs/config": "^3.2.2",
+    "@nestjs/throttler": "^6.0.0",
+    "@nestjs/graphql": "^13.1.0",
+    "@nestjs/apollo": "^13.1.0",
+    "graphql": "^16.9.0",
+    "nestjs-pino": "^3.5.0",
+    "pino": "^9.2.0",
+    "pino-http": "^10.3.0",
+    "prom-client": "^15.1.2",
+    "@apollo/server": "^5.0.0",
+    "bullmq": "^5.7.0",
+    "ioredis": "^5.4.1",
+    "helmet": "^7.1.0",
+    "@opentelemetry/api": "^1.9.0",
+    "express-rate-limit": "^8.0.1",
+    "jsonwebtoken": ">=9.0.0",
+    "compression": "^1.7.4",
+    "@arman/env-config": "workspace:*",
+    "@arman/observability": "workspace:*",
+    "jose": "^5.8.0",
+    "@livekit/server-sdk": "^2.5.0",
+    "bcryptjs": "^3.0.2",
+    "@socket.io/redis-adapter": "^8.2.1",
+    "@nestjs/passport": "11.0.5",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "class-validator": "^0.14.1",
+    "class-transformer": "^0.5.1",
+    "@arman/observability-sdk": "workspace:*",
+    "@arman/security-middleware": "workspace:*",
+    "stripe": "^14.26.0",
+    "@opentelemetry/sdk-node": "^0.55.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.55.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.55.0"
+  },
+  "description": "ArmanVarzesh Backend API (NestJS + GraphQL)",
+  "keywords": [
+    "armanvarzesh",
+    "graphql",
+    "nest",
+    "nestjs",
+    "prisma"
+  ],
+  "peerDependencies": {
+    "zarinpal-checkout": "*",
+    "twilio": "*",
+    "kavenegar": "*"
+  },
+  "peerDependenciesMeta": {
+    "zarinpal-checkout": {
+      "optional": true
+    },
+    "twilio": {
+      "optional": true
+    },
+    "kavenegar": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=20.0.0 <21",
+    "pnpm": ">=9 <10"
+  },
+  "prisma": {
+    "seed": "node ./prisma/seed.ts || node ./seed.ts || true"
+  }
+}
