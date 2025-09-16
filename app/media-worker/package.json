@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "bullmq": "^5.7.0",
-    "dotenv": "^16.4.5",
+    "dotenv": "^17.2.2",
     "ioredis": "^5.4.1",
     "p-limit": "^5.0.0",
     "uuid": "^9.0.1",
