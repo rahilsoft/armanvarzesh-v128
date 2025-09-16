@@ -80,7 +80,7 @@
     "class-transformer": "^0.5.1",
     "@arman/observability-sdk": "workspace:*",
     "@arman/security-middleware": "workspace:*",
-    "stripe": "^14.26.0",
+    "stripe": "^18.5.0",
     "@opentelemetry/sdk-node": "^0.55.0",
     "@opentelemetry/auto-instrumentations-node": "^0.55.0",
     "@opentelemetry/exporter-trace-otlp-http": "^0.55.0",
