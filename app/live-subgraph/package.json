@@ -24,8 +24,8 @@
     "body-parser": "^1.20.2",
     "socket.io": "^4.7.5",
     "uuid": "^9.0.1",
-    "@arman/integrations-livekit": "*",
-    "@arman/storage": "*",
+    "@arman/integrations-livekit": "https://github.com/rahilsoft/integrations-livekit#main",
+    "@arman/storage": "https://github.com/rahilsoft/storage#main",
     "@arman/observability-sdk": "workspace:*",
     "@arman/security-middleware": "workspace:*"
   },
