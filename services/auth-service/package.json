@@ -17,7 +17,7 @@
     "sbom": "npx @cyclonedx/cyclonedx-npm --ignore-npm-errors --json --output-file sbom.json"
   },
   "dependencies": {
-    "fastify": "^4.25.2",
+    "fastify": "^5.6.0",
     "fastify-cors": "^6.1.0",
     "jsonwebtoken": "^9.0.2",
     "@nestjs/passport": "11.0.5",
