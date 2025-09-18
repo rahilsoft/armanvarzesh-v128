@@ -26,7 +26,7 @@
     "uuid": "^9.0.1",
 
     "@arman/integrations-livekit": "git+https://github.com/rahilsoft/integrations-livekit.git#main",
-    "@arman/storage": "git+https://github.com/rahilsoft/storage.git#main",
+"@arman/storage": "git+https://github.com/rahilsoft/storage.git#main",
     "@arman/observability-sdk": "workspace:*",
     "@arman/security-middleware": "workspace:*"
   },
