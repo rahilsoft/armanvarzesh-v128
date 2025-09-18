@@ -4,7 +4,7 @@
 We support security fixes on the default branch.
 
 ## Reporting a Vulnerability
-Please report (non-publicly) via security@your-org.example. We will acknowledge within 48 hours.
+Please report (non-publicly) via rahilsoft@live.com. We will acknowledge within 48 hours.
 
 ## Handling Secrets
 - No real secrets in the repository.
