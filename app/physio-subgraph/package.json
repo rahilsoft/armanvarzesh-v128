@@ -16,7 +16,7 @@
     "@apollo/server": "^4.10.4",
     "graphql": "^16.9.0",
     "express": "^4.19.2",
-    "@types/express": "^4.17.21",
+    "@types/express": "^5.0.3",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "@arman/security-middleware": "workspace:*",
