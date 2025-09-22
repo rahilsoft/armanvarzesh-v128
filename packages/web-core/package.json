@@ -5,7 +5,7 @@
   "types": "index.ts",
   "private": true,
   "dependencies": {
-    "@apollo/client": "^3.11.0",
+    "@apollo/client": "^4.0.5",
     "graphql": "^16.9.0",
     "cross-fetch": "^4.0.0"
   },
