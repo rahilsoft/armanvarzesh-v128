@@ -34,7 +34,7 @@
   "devDependencies": {
     "typescript": "^5.5.4",
     "prisma": "^5.18.0",
-    "@prisma/client": "^5.18.0"
+    "@prisma/client": "^6.16.2"
   },
   "engines": {
     "node": ">=20.0.0 <21",
