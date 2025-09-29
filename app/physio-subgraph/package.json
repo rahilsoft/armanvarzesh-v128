@@ -15,7 +15,7 @@
     "@apollo/subgraph": "^2.7.5",
     "@apollo/server": "^4.10.4",
     "graphql": "^16.9.0",
-    "express": "^4.19.2",
+    "express": "^5.1.0",
     "@types/express": "^5.0.3",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
