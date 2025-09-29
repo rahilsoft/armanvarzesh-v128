@@ -16,7 +16,7 @@
     "sbom": "npx @cyclonedx/cyclonedx-npm --ignore-npm-errors --json --output-file sbom.json"
   },
   "dependencies": {
-    "@nestjs/common": "^10.3.0",
+    "@nestjs/common": "^11.1.6",
     "@nestjs/core": "^10.3.0",
     "@nestjs/platform-express": "^10.3.0",
     "reflect-metadata": "^0.2.2",
