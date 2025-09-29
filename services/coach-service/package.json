@@ -20,7 +20,7 @@
     "compression": "^1.7.4",
     "@arman/security-middleware": "workspace:*",
     "@arman/observability-sdk": "workspace:*",
-    "@prisma/client": "^5.18.0"
+    "@prisma/client": "^6.16.2"
   },
   "devDependencies": {
     "typescript": "^5.5.4",
