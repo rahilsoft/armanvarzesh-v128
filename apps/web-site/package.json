@@ -43,7 +43,7 @@
     "socket.io-client": "^4.7.5",
     "chart.js": "^4.4.3",
     "react-chartjs-2": "^5.2.0",
-    "@apollo/client": "^3.11.0",
+    "@apollo/client": "^4.0.7",
     "lottie-web": "^5.12.2",
     "jose": "^5.9.3",
     "web-vitals": "^4.2.0",

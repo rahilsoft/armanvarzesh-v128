@@ -36,7 +36,7 @@
     "react-native": "0.72.0",
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
-    "@apollo/client": "^3.8.0",
+    "@apollo/client": "^4.0.7",
     "graphql": "^16.8.1",
     "expo-font": "~11.10.3",
     "@nestjs/graphql": "^13.1.0",
